@@ -1,0 +1,203 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+a {
+    color: inherit;
+}
+
+.navbar-brand {
+    font-size: 1.4rem;
+    letter-spacing: 0.5px;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 60%, #084298 100%);
+    color: #fff;
+    padding: 80px 0 60px;
+}
+
+.hero-section h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.hero-section p {
+    font-size: 1.15rem;
+    opacity: 0.9;
+}
+
+.section-title {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #0d6efd;
+    padding-left: 12px;
+    margin-bottom: 1.5rem;
+}
+
+.hero-sec {
+    color: red;
+}
+
+
+/* ---- Event Cards ---- */
+
+.event-card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    overflow: hidden;
+    height: 100%;
+}
+
+.event-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.13);
+}
+
+.event-card .card-img-top {
+    height: 180px;
+    object-fit: cover;
+}
+
+.event-card .card-img-placeholder {
+    height: 180px;
+    background: linear-gradient(135deg, #e9ecef, #dee2e6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: #adb5bd;
+}
+
+.event-card .badge {
+    font-size: 0.75rem;
+}
+
+.event-card .card-title {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+
+/* ---- Category Cards ---- */
+
+.category-card {
+    border: none;
+    border-radius: 12px;
+    text-align: center;
+    padding: 24px 16px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-decoration: none;
+    display: block;
+    color: #333;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+.category-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+    color: #0d6efd;
+}
+
+.category-card i {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.category-card span {
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.event-detail-img {
+    width: 100%;
+    max-height: 380px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.event-meta-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    font-size: 0.97rem;
+}
+
+.event-meta-item i {
+    color: #0d6efd;
+    font-size: 1.1rem;
+    width: 20px;
+}
+
+.search-bar {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+}
+
+.contact-card {
+    border: none;
+    border-radius: 14px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.09);
+}
+
+.team-card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+    text-align: center;
+    padding: 28px 16px;
+}
+
+.team-card .avatar {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #0d6efd, #084298);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 14px;
+    font-size: 2rem;
+    color: #fff;
+}
+
+body.dark-mode {
+    background: #121212;
+    color: #eaeaea;
+}
+
+body.dark-mode .card,
+body.dark-mode .navbar,
+body.dark-mode .bg-light,
+body.dark-mode .hero-section,
+body.dark-mode section,
+body.dark-mode .section-title,
+body.dark-mode .list-dark li,
+body.dark-mode .search-bar {
+    background: #1e1e1e !important;
+    color: #fff;
+}
+
+.footer-link:hover {
+    color: #fff !important;
+}
+
+@media (max-width: 576px) {
+    .hero-section h1 {
+        font-size: 1.9rem;
+    }
+    .section-title {
+        font-size: 1.3rem;
+    }
+}
